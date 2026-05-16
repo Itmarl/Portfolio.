@@ -1,0 +1,110 @@
+/* =========================================
+   ABOUT PAGE — about.css
+   ========================================= */
+
+#about {
+  padding: 0;
+  border-top: none;
+  min-height: 100vh;
+}
+
+.about-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+
+.about-left {
+  background-image: url('./assets/IMG_1334.JPG');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.about-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  opacity: 0.3;
+}
+
+.about-placeholder p {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.about-left::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(8,12,18,0.2) 0%,
+    rgba(8,12,18,0.1) 40%,
+    rgba(8,12,18,0.85) 100%
+  );
+  pointer-events: none;
+}
+
+.about-left-content {
+  position: relative;
+  z-index: 1;
+  padding: 3rem;
+}
+
+.about-left-content .section-header {
+  margin-bottom: 1.5rem;
+}
+
+.about-left-content .section-title {
+  font-size: clamp(2rem, 3.5vw, 3.5rem);
+}
+
+.about-left-content p {
+  color: rgba(232, 224, 208, 0.75);
+  font-size: 0.85rem;
+  line-height: 1.9;
+  max-width: 480px;
+  margin-bottom: 1rem;
+}
+
+.about-left-content .skills-list {
+  margin-top: 1.25rem;
+}
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8rem 4rem;
+  border-left: 1px solid var(--border);
+  gap: 1.25rem;
+}
+
+.about-right .stat-card {
+  padding: 1.75rem 2rem;
+}
+
+/* ---- RESPONSIVO ---- */
+@media (max-width: 900px) {
+  .about-split {
+    grid-template-columns: 1fr;
+  }
+
+  .about-left {
+    min-height: 60vh;
+  }
+
+  .about-right {
+    border-left: none;
+    border-top: 1px solid var(--border);
+    padding: 3rem 2rem;
+  }
+}
