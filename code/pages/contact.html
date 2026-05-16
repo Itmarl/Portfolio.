@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mariana Ribeiro — Portfólio</title>
+
+  <!-- Fontes -->
+   <link rel="icon" type="image/png" href="../assets/Logo.svg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800;900&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+    <div id="cursor"></div>
+
+    <header>
+      <a href="../index.html" class="logo">
+        <span>&lt;</span>Mariana Ribeiro<span>/&gt;</span>
+      </a>
+      <nav>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projetos</a>
+        <a href="contact.html">Contato</a>
+      </nav>
+    </header>
+  
+    <!-- =====================
+       CONTACT
+       ===================== -->
+  <section id="contact" class="page-section">
+    <div class="section-header">
+      <span class="section-num">// 03</span>
+      <h2 class="section-title">Contato</h2>
+    </div>
+
+    <div class="contact-inner">
+      <div class="contact-text">
+        <p>
+          Tem um projeto interessante ou quer bater um papo sobre
+          tecnologia? Manda uma mensagem — responderei em até 48h.
+        </p>
+
+        <div class="contact-links">
+          <a class="contact-link-item" href="mailto:marianadasilva955@gmail.com">
+            <span class="icon">✉</span>
+            marianadasilva955@gmail.com
+          </a>
+          <a class="contact-link-item" href="https://linkedin.com/in/Itmarl" target="_blank" rel="noopener">
+            <span class="icon">in</span>
+            linkedin.com/in/Itmarl
+          </a>
+          <a class="contact-link-item" href="https://github.com/Itmarl" target="_blank" rel="noopener">
+            <span class="icon">⌥</span>
+            github.com/Itmarl
+          </a>
+        </div>
+      </div>
+
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <label class="form-label" for="name">Nome</label>
+          <input class="form-input" type="text" id="name" placeholder="Seu nome" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">E-mail</label>
+          <input class="form-input" type="email" id="email" placeholder="seu@email.com" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Mensagem</label>
+          <textarea class="form-textarea" id="message" placeholder="Conte sobre seu projeto..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Enviar Mensagem</button>
+      </form>
+    </div>
+  </section>
+    <!-- =====================
+       FOOTER
+       ===================== -->
+  <footer>
+    <span>© 2026 Mariana Ribeiro. Todos os direitos reservados.</span>
+    <span>Feito com HTML · CSS · JS</span>
+  </footer>
+
+  <script src="../main.js"></script>
+</body>
+</html>
